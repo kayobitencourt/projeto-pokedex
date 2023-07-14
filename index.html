@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <!--Normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <!--Nosso CSS-->
+    <link rel="stylesheet" href="/assets/css/pokedex.css" />
+  </head>
+
+  <body>
+    <section class="content">
+      <!--Nossa logo Pokedex-->
+      <h1 class="title">Pokedex</h1>
+      <div class="title-img">
+        <img src="./assets/img/pokedex.png" alt="Pokedex Logo" />
+      </div>
+      <div id="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Pesquisar"
+        />
+        <ul id="searchResults"></ul>
+      </div>
+      <ol id="pokemonList" class="pokemons">
+        <!--...Pokémons Aqui...-->
+      </ol>
+      <button id="scrollTopButton" type="button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <div class="pagination">
+        <button id="loadMoreButton" type="button">Carregando...</button>
+      </div>
+    </section>
+
+    <!-- Bibliotecas do Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--Nosso JS-->
+    <script src="/assets/js/main.js"></script>
+    <script src=/assets/js/scrollTopButton.js></script>
+  </body>
+</html>
